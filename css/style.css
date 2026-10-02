@@ -1,6 +1,4 @@
-/* ============================================
-   RESET & VARIABLES
-   ============================================ */
+/*RESET & VARIABLES*/
 *,
 *::before,
 *::after {
@@ -27,7 +25,6 @@
 
 html {
     scroll-behavior: smooth;
-    /* Tránh thanh cuộn ngang */
     overflow-x: hidden;
 }
 
@@ -49,7 +46,6 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    /* Không bị méo */
     object-fit: cover;
 }
 
@@ -57,16 +53,13 @@ ul {
     list-style: none;
 }
 
-/* ============================================
-   HEADER & NAVIGATION
-   ============================================ */
+/*HEADER & NAVIGATION*/
 header {
     background-color: var(--white);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* Cần relative để menu mobile absolute đúng */
     width: 100%;
 }
 
@@ -114,7 +107,7 @@ header {
     color: var(--primary);
 }
 
-/* Hamburger - ẩn trên desktop */
+/* Hamburger */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -136,20 +129,19 @@ header {
     transition: transform 0.3s, opacity 0.3s;
 }
 
-/* Animation khi mở menu (tùy chọn) */
 .menu-toggle.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
+
 .menu-toggle.active span:nth-child(2) {
     opacity: 0;
 }
+
 .menu-toggle.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* ============================================
-   HERO / BANNER
-   ============================================ */
+/*HERO / BANNER*/
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
         url('../images/vinhhalong_1.jpg') no-repeat center center / cover;
@@ -197,9 +189,7 @@ header {
     line-height: 1.3;
 }
 
-/* ============================================
-   BUTTONS
-   ============================================ */
+/*BUTTONS*/
 .btn {
     display: inline-block;
     padding: 0.7rem 1.5rem;
@@ -219,20 +209,7 @@ header {
     transform: translateY(-1px);
 }
 
-.btn-outline {
-    background: transparent;
-    border: 2px solid var(--primary);
-    color: var(--primary);
-}
-
-.btn-outline:hover {
-    background: var(--primary);
-    color: var(--white);
-}
-
-/* ============================================
-   LAYOUT
-   ============================================ */
+/*LAYOUT*/
 .container {
     max-width: var(--container);
     margin: 0 auto;
@@ -257,12 +234,9 @@ header {
     font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
-/* ============================================
-   GRID & CARDS
-   ============================================ */
+/*GRID & CARDS*/
 .grid-container {
     display: grid;
-    /* Desktop: nhiều cột, tự co theo minmax */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.6rem;
     width: 100%;
@@ -277,7 +251,7 @@ header {
     display: flex;
     flex-direction: column;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    min-width: 0; /* quan trọng để grid không tràn */
+    min-width: 0;
 }
 
 .card:hover {
@@ -289,7 +263,6 @@ header {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    /* Không méo, không tràn */
 }
 
 .card-body {
@@ -347,9 +320,7 @@ header {
     text-decoration: underline;
 }
 
-/* ============================================
-   ABOUT
-   ============================================ */
+/*ABOUT*/
 .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -382,9 +353,7 @@ header {
     margin-bottom: 0.4rem;
 }
 
-/* ============================================
-   CONTACT FORM
-   ============================================ */
+/*CONTACT FORM*/
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -419,8 +388,7 @@ header {
 }
 
 .form-group input,
-.form-group textarea,
-.form-group select {
+.form-group textarea {
     width: 100%;
     padding: 0.7rem;
     border: 1px solid #d1d5db;
@@ -436,9 +404,7 @@ header {
     border-color: transparent;
 }
 
-/* ============================================
-   GALLERY
-   ============================================ */
+/*GALLERY*/
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -477,9 +443,7 @@ header {
     font-weight: 600;
 }
 
-/* ============================================
-   BLOG / TIPS
-   ============================================ */
+/*BLOG / TIPS*/
 .blog-list {
     display: flex;
     flex-direction: column;
@@ -531,7 +495,6 @@ header {
     margin-bottom: 0.7rem;
 }
 
-/* Tips cards */
 .tips-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -562,9 +525,7 @@ header {
     margin-bottom: 0.45rem;
 }
 
-/* ============================================
-   SOURCES
-   ============================================ */
+/*SOURCES*/
 .sources-list {
     max-width: 720px;
     margin: 0 auto;
@@ -576,9 +537,7 @@ header {
     border-left: 3px solid var(--primary);
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+/*FOOTER*/
 footer {
     background-color: var(--dark);
     color: #9ca3af;
@@ -630,9 +589,7 @@ footer {
     font-size: 0.85rem;
 }
 
-/* ============================================
-   RESPONSIVE – TABLET LỚN (~1024px)
-   ============================================ */
+/*TABLET LỚN (≈1024px)*/
 @media (max-width: 1024px) {
     .nav-links {
         gap: 0.25rem 0.85rem;
@@ -656,11 +613,8 @@ footer {
     }
 }
 
-/* ============================================
-   RESPONSIVE – TABLET / MENU MOBILE (≤ 900px)
-   ============================================ */
+/*TABLET / MENU MOBILE (≤900px)*/
 @media (max-width: 900px) {
-    /* Hiện hamburger, ẩn nav ngang */
     .menu-toggle {
         display: flex;
     }
@@ -725,9 +679,7 @@ footer {
     }
 }
 
-/* ============================================
-   RESPONSIVE – MOBILE / TABLET NHỎ (≤ 768px)
-   ============================================ */
+/*MOBILE / TABLET NHỎ (≤768px)*/
 @media (max-width: 768px) {
     .container {
         padding: 1.75rem 1rem;
@@ -777,9 +729,7 @@ footer {
     }
 }
 
-/* ============================================
-   RESPONSIVE – ĐIỆN THOẠI (≤ 576px)
-   ============================================ */
+/*ĐIỆN THOẠI (≤576px)*/
 @media (max-width: 576px) {
     .navbar {
         padding: 0.7rem 0.9rem;
@@ -840,9 +790,7 @@ footer {
     }
 }
 
-/* ============================================
-   RESPONSIVE – MÀN HÌNH RẤT NHỎ (≤ 400px)
-   ============================================ */
+/*ĐT MÀN HÌNH NHỎ (≤400px)*/
 @media (max-width: 400px) {
     .gallery-grid {
         grid-template-columns: 1fr;
