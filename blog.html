@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Du Lịch | Cẩm Nang Việt Nam</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Du Lịch <span>Việt</span></a>
+            </div>
+            <button class="menu-toggle" aria-label="Mở menu" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="destinations.html">Địa Điểm</a></li>
+                <li><a href="gallery.html">Thư Viện Ảnh</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="tips.html">Mẹo Du Lịch</a></li>
+                <li><a href="about.html">Về Dự Án</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Blog & Kinh Nghiệm</h1>
+    </section>
+
+    <main class="container">
+        <div class="section-title">
+            <h2>Bài Viết Mới</h2>
+            <p>Chia sẻ kinh nghiệm và thông tin hữu ích cho chuyến đi của bạn</p>
+        </div>
+
+        <div class="blog-list">
+            <article class="blog-card">
+                <img src="images/vinhhalong_1.jpg" alt="Hạ Long">
+                <div class="blog-body">
+                    <div class="blog-meta">15/03/2026 · Quảng Ninh</div>
+                    <h3 class="blog-title">Nên đi Hạ Long bao nhiêu ngày cho vừa?</h3>
+                    <p class="blog-excerpt">Hai ngày một đêm là lựa chọn phổ biến: ngày 1 tham quan hang động và chèo kayak, ngày 2 ngắm bình minh trên vịnh rồi về. Nếu có thêm thời gian, có thể kết hợp Cát Bà.</p>
+                    <a href="#" class="card-link">Đọc tiếp →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="images/sapa_1.jpg" alt="Sa Pa">
+                <div class="blog-body">
+                    <div class="blog-meta">02/02/2026 · Lào Cai</div>
+                    <h3 class="blog-title">Sa Pa mùa nào đẹp nhất?</h3>
+                    <p class="blog-excerpt">Tháng 9–10 là lúc lúa chín vàng, tháng 12–2 có tuyết rơi (nếu may mắn). Tránh tháng 6–8 vì mưa nhiều và đường trơn.</p>
+                    <a href="#" class="card-link">Đọc tiếp →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="images/phocohoian_1.jpg" alt="Hội An">
+                <div class="blog-body">
+                    <div class="blog-meta">20/01/2026 · Quảng Nam</div>
+                    <h3 class="blog-title">Đi bộ phố cổ Hội An buổi tối</h3>
+                    <p class="blog-excerpt">Khi đèn lồng được thắp sáng, cả khu phố như bước vào thế giới khác. Nên thuê xe đạp hoặc đi bộ để cảm nhận trọn vẹn không khí.</p>
+                    <a href="#" class="card-link">Đọc tiếp →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="images/dalat_1.png" alt="Đà Lạt">
+                <div class="blog-body">
+                    <div class="blog-meta">05/12/2025 · Lâm Đồng</div>
+                    <h3 class="blog-title">Checklist đồ khi đi Đà Lạt</h3>
+                    <p class="blog-excerpt">Áo khoác mỏng, giày đi bộ, kem chống nắng và máy ảnh. Thời tiết se lạnh buổi tối, ban ngày có thể nắng gắt.</p>
+                    <a href="#" class="card-link">Đọc tiếp →</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Du Lịch Việt</h3>
+                <p>Trang thông tin phi thương mại chia sẻ vẻ đẹp thiên nhiên và văn hóa Việt Nam.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Liên kết</h4>
+                <a href="destinations.html">Địa điểm</a>
+                <a href="gallery.html">Thư viện ảnh</a>
+                <a href="blog.html">Blog</a>
+                <a href="tips.html">Mẹo du lịch</a>
+            </div>
+            <div class="footer-links">
+                <h4>Thông tin</h4>
+                <a href="about.html">Về dự án</a>
+                <a href="contact.html">Liên hệ</a>
+                <a href="sources.html">Nguồn tham khảo</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cẩm Nang Du Lịch Việt Nam. Trang thông tin phi thương mại.</p>
+        </div>
+    </footer>
+<script>
+function toggleMenu() {
+  var nav = document.querySelector(".nav-links");
+  var btn = document.querySelector(".menu-toggle");
+  nav.classList.toggle("open");
+  btn.classList.toggle("active");
+}
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.querySelector(".nav-links").classList.remove("open");
+    document.querySelector(".menu-toggle").classList.remove("active");
+  });
+});
+</script>
+</body>
+</html>

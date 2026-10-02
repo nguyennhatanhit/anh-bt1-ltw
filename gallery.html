@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Ảnh | Cẩm Nang Việt Nam</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Du Lịch <span>Việt</span></a>
+            </div>
+            <button class="menu-toggle" aria-label="Mở menu" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="destinations.html">Địa Điểm</a></li>
+                <li><a href="gallery.html" class="active">Thư Viện Ảnh</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="tips.html">Mẹo Du Lịch</a></li>
+                <li><a href="about.html">Về Dự Án</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Thư Viện Ảnh Địa Danh</h1>
+    </section>
+
+    <main class="container">
+        <div class="section-title">
+            <h2>Hình Ảnh Minh Họa</h2>
+            <p>Một số khoảnh khắc đẹp từ các điểm đến trên khắp Việt Nam</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/vinhhalong_1.jpg" alt="Vịnh Hạ Long">
+                <div class="gallery-caption">Vịnh Hạ Long - Quảng Ninh</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/phocohoian_1.jpg" alt="Phố Cổ Hội An">
+                <div class="gallery-caption">Phố Cổ Hội An - Quảng Nam</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/sapa_1.jpg" alt="Sa Pa">
+                <div class="gallery-caption">Sa Pa - Lào Cai</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/phuquoc_1.jpg" alt="Phú Quốc">
+                <div class="gallery-caption">Đảo Ngọc Phú Quốc</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/trangan_1.jpg" alt="Tràng An">
+                <div class="gallery-caption">Tràng An - Ninh Bình</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/phongnha_1.jpg" alt="Phong Nha">
+                <div class="gallery-caption">Phong Nha - Kẻ Bàng</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/hue_1.jpg" alt="Huế">
+                <div class="gallery-caption">Cố đô Huế</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/dalat_1.png" alt="Đà Lạt">
+                <div class="gallery-caption">Đà Lạt - Lâm Đồng</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/nhatrang_1.jpg" alt="Nha Trang">
+                <div class="gallery-caption">Vịnh Nha Trang</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/ban-dao-son-tra_1.jpg" alt="Sơn Trà">
+                <div class="gallery-caption">Bán đảo Sơn Trà - Đà Nẵng</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/song-nho-que_1.jpg" alt="Sông Nho Quế">
+                <div class="gallery-caption">Sông Nho Quế - Hà Giang</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/chonoicairang_1.jpg" alt="Chợ Nổi Cái Răng">
+                <div class="gallery-caption">Chợ Nổi Cái Răng - Cần Thơ</div>
+            </div>
+        </div>
+
+        <p style="text-align:center; margin-top:2rem; font-size:0.9rem; color:#6b7280;">
+            Nguồn ảnh: xem trang <a href="sources.html" style="color:var(--primary);">Nguồn tham khảo</a>
+        </p>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Du Lịch Việt</h3>
+                <p>Trang thông tin phi thương mại chia sẻ vẻ đẹp thiên nhiên và văn hóa Việt Nam.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Liên kết</h4>
+                <a href="destinations.html">Địa điểm</a>
+                <a href="gallery.html">Thư viện ảnh</a>
+                <a href="blog.html">Blog</a>
+                <a href="tips.html">Mẹo du lịch</a>
+            </div>
+            <div class="footer-links">
+                <h4>Thông tin</h4>
+                <a href="about.html">Về dự án</a>
+                <a href="contact.html">Liên hệ</a>
+                <a href="sources.html">Nguồn tham khảo</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cẩm Nang Du Lịch Việt Nam. Trang thông tin phi thương mại.</p>
+        </div>
+    </footer>
+<script>
+function toggleMenu() {
+  var nav = document.querySelector(".nav-links");
+  var btn = document.querySelector(".menu-toggle");
+  nav.classList.toggle("open");
+  btn.classList.toggle("active");
+}
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.querySelector(".nav-links").classList.remove("open");
+    document.querySelector(".menu-toggle").classList.remove("active");
+  });
+});
+</script>
+</body>
+</html>

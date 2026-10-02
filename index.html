@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khám Phá Vẻ Đẹp Việt Nam | Cẩm Nang Du Lịch</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <!-- Nav Bar -->
     <header>
         <nav class="navbar">
             <div class="logo">
                 <a href="index.html">Du Lịch <span>Việt</span></a>
             </div>
+            <button class="menu-toggle" aria-label="Mở menu" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Trang Chủ</a></li>
-                <li><a href="destinations.html">Địa Điểm Du Lịch</a></li>
+                <li><a href="destinations.html">Địa Điểm</a></li>
+                <li><a href="gallery.html">Thư Viện Ảnh</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="tips.html">Mẹo Du Lịch</a></li>
                 <li><a href="about.html">Về Dự Án</a></li>
-                <li><a href="contact.html">Đóng Góp Ý Kiến</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Banner -->
     <section class="hero">
         <h1>Khám Phá Cảnh Đẹp Việt Nam</h1>
         <p>Tìm hiểu các danh lam thắng cảnh, di sản văn hóa và thiên nhiên hùng vĩ trải dài từ Bắc vào Nam.</p>
         <a href="destinations.html" class="btn">Xem Địa Điểm</a>
     </section>
 
-    <!-- Nội dung chính -->
     <main class="container">
         <div class="section-title">
             <h2>Điểm Đến Nổi Bật</h2>
@@ -40,58 +40,110 @@
         </div>
 
         <div class="grid-container">
-            <!-- Card 1 -->
             <article class="card">
                 <img src="images/vinhhalong_1.jpg" alt="Vịnh Hạ Long">
                 <div class="card-body">
                     <span class="badge">Di sản UNESCO</span>
                     <h3 class="card-title">Vịnh Hạ Long</h3>
-                    <p class="card-text">Nổi tiếng với hàng nghìn đảo đá vôi nhấp nhô trên mặt nước xanh ngọc bích, tạo
-                        nên khung cảnh thiên nhiên hùng vĩ.</p>
+                    <p class="card-text">Nổi tiếng với hàng nghìn đảo đá vôi nhấp nhô trên mặt nước xanh ngọc bích, tạo nên khung cảnh thiên nhiên hùng vĩ.</p>
                     <div class="card-info">
                         <span>📍 Quảng Ninh</span>
-                        <span>🗓️ Mùa đẹp: T3 - T10 </span>
+                        <span>🗓️ T3 - T10</span>
                     </div>
+                    <a href="destinations.html" class="card-link">Xem thêm →</a>
                 </div>
             </article>
 
-            <!-- Card 2 -->
             <article class="card">
                 <img src="images/phocohoian_1.jpg" alt="Phố Cổ Hội An">
                 <div class="card-body">
                     <span class="badge">Văn Hóa - Lịch Sử</span>
                     <h3 class="card-title">Phố Cổ Hội An</h3>
-                    <p class="card-text">Đô thị cổ giữ nguyên vẹn kiến trúc truyền thống với những con phố đèn lồng lung
-                        linh và không gian hoài niệm.</p>
+                    <p class="card-text">Đô thị cổ giữ nguyên vẹn kiến trúc truyền thống với những con phố đèn lồng lung linh và không gian hoài niệm.</p>
                     <div class="card-info">
                         <span>📍 Quảng Nam</span>
-                        <span>🗓️ Mùa đẹp: T2 - T7</span>
+                        <span>🗓️ T2 - T7</span>
                     </div>
+                    <a href="destinations.html" class="card-link">Xem thêm →</a>
                 </div>
             </article>
 
-            <!-- Card 3 -->
             <article class="card">
                 <img src="images/sapa_1.jpg" alt="Sa Pa">
                 <div class="card-body">
                     <span class="badge">Thiên Nhiên - Núi Rừng</span>
                     <h3 class="card-title">Sa Pa</h3>
-                    <p class="card-text">Vùng núi cao nổi tiếng với ruộng bậc thang mênh mông, đỉnh Fansipan hùng vĩ và
-                        nét văn hóa đa dạng của các dân tộc.</p>
+                    <p class="card-text">Vùng núi cao nổi tiếng với ruộng bậc thang mênh mông, đỉnh Fansipan hùng vĩ và nét văn hóa đa dạng của các dân tộc.</p>
                     <div class="card-info">
                         <span>📍 Lào Cai</span>
-                        <span>🗓️ Mùa đẹp: T9 - T10 </span>
+                        <span>🗓️ T9 - T10</span>
                     </div>
+                    <a href="destinations.html" class="card-link">Xem thêm →</a>
                 </div>
             </article>
         </div>
+
+        <div class="section-title" style="margin-top: 3.5rem;">
+            <h2>Tại Sao Nên Khám Phá Việt Nam?</h2>
+            <p>Đất nước với sự đa dạng về địa lý, văn hóa và ẩm thực</p>
+        </div>
+
+        <div class="tips-grid">
+            <div class="tip-card">
+                <div class="tip-icon">🏞️</div>
+                <h3>Thiên nhiên đa dạng</h3>
+                <p>Từ vịnh biển, hang động, núi rừng đến ruộng bậc thang – mỗi vùng miền mang một vẻ đẹp riêng.</p>
+            </div>
+            <div class="tip-card">
+                <div class="tip-icon">🏛️</div>
+                <h3>Di sản văn hóa</h3>
+                <p>Nhiều di sản UNESCO như Hạ Long, Hội An, Huế, Tràng An… vẫn giữ được nét nguyên sơ.</p>
+            </div>
+            <div class="tip-card">
+                <div class="tip-icon">🍜</div>
+                <h3>Ẩm thực phong phú</h3>
+                <p>Phở, bún chả, cao lầu, bánh xèo… mỗi món đều gắn liền với câu chuyện vùng miền.</p>
+            </div>
+        </div>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Cẩm Nang Du Lịch Việt Nam. Trang thông tin phi thương mại.</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Du Lịch Việt</h3>
+                <p>Trang thông tin phi thương mại chia sẻ vẻ đẹp thiên nhiên và văn hóa Việt Nam.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Liên kết</h4>
+                <a href="destinations.html">Địa điểm</a>
+                <a href="gallery.html">Thư viện ảnh</a>
+                <a href="blog.html">Blog</a>
+                <a href="tips.html">Mẹo du lịch</a>
+            </div>
+            <div class="footer-links">
+                <h4>Thông tin</h4>
+                <a href="about.html">Về dự án</a>
+                <a href="contact.html">Liên hệ</a>
+                <a href="sources.html">Nguồn tham khảo</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cẩm Nang Du Lịch Việt Nam. Trang thông tin phi thương mại.</p>
+        </div>
     </footer>
-
+<script>
+function toggleMenu() {
+  var nav = document.querySelector(".nav-links");
+  var btn = document.querySelector(".menu-toggle");
+  nav.classList.toggle("open");
+  btn.classList.toggle("active");
+}
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.querySelector(".nav-links").classList.remove("open");
+    document.querySelector(".menu-toggle").classList.remove("active");
+  });
+});
+</script>
 </body>
-
 </html>
