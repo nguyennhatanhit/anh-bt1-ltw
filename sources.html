@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguồn Tham Khảo | Cẩm Nang Việt Nam</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">Du Lịch <span>Việt</span></a>
+                <a href="index.html">Du Lịch <span>Việt Nam</span></a>
             </div>
             <button class="menu-toggle" aria-label="Mở menu" onclick="toggleMenu()">
                 <span></span><span></span><span></span>
@@ -18,9 +20,9 @@
             <ul class="nav-links">
                 <li><a href="index.html">Trang Chủ</a></li>
                 <li><a href="destinations.html">Địa Điểm</a></li>
-                <li><a href="gallery.html">Thư Viện Ảnh</a></li>
+                <li><a href="gallery.html">Góc Ảnh Đẹp</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="tips.html">Mẹo Du Lịch</a></li>
+                <li><a href="tips.html">Chuẩn Bị Du Lịch</a></li>
                 <li><a href="about.html">Về Dự Án</a></li>
                 <li><a href="contact.html">Liên Hệ</a></li>
             </ul>
@@ -39,18 +41,23 @@
 
         <div class="sources-list">
             <p class="about-text" style="margin-bottom:1.5rem;">
-                Các hình ảnh trong website được thu thập từ nguồn công khai trên internet phục vụ mục đích học tập, phi thương mại. Nếu bạn là chủ sở hữu và muốn yêu cầu gỡ bỏ, vui lòng liên hệ qua trang Liên hệ.
+                Các hình ảnh trong website được thu thập từ nguồn công khai trên internet phục vụ mục đích học tập, phi
+                thương mại. Nếu bạn là chủ sở hữu và muốn yêu cầu gỡ bỏ, vui lòng liên hệ qua trang Liên hệ.
             </p>
 
             <ul>
-                <li><strong>Vịnh Hạ Long, Hội An, Sa Pa, Phú Quốc, Tràng An, Phong Nha, Huế, Đà Lạt, Nha Trang, Sơn Trà, Sông Nho Quế, Chợ Nổi Cái Răng</strong> – Ảnh minh họa được sử dụng từ bộ sưu tập cá nhân / nguồn công khai phục vụ bài tập.</li>
-                <li>Thông tin địa danh tham khảo từ kiến thức phổ thông và các trang thông tin du lịch công cộng (không sao chép nguyên văn).</li>
+                <li><strong>Vịnh Hạ Long, Hội An, Sa Pa, Phú Quốc, Tràng An, Phong Nha, Huế, Đà Lạt, Nha Trang, Sơn Trà,
+                        Sông Nho Quế, Chợ Nổi Cái Răng</strong> – Ảnh minh họa được sử dụng từ bộ sưu tập cá nhân /
+                    nguồn công khai phục vụ bài tập.</li>
+                <li>Thông tin địa danh tham khảo từ kiến thức phổ thông và các trang thông tin du lịch công cộng (không
+                    sao chép nguyên văn).</li>
                 <li>Website chỉ dùng HTML5 + CSS3 thuần, không sử dụng framework bên ngoài.</li>
             </ul>
 
             <div class="about-box" style="margin-top:2rem;">
                 <h3>Lưu ý</h3>
-                <p>Đây là sản phẩm bài tập sinh viên. Nội dung mang tính minh họa và học tập. Không sử dụng cho mục đích thương mại.</p>
+                <p>Đây là sản phẩm bài tập sinh viên. Nội dung mang tính minh họa và học tập. Không sử dụng cho mục đích
+                    thương mại.</p>
             </div>
         </div>
     </main>
@@ -79,19 +86,20 @@
             <p>&copy; 2026 Cẩm Nang Du Lịch Việt Nam. Trang thông tin phi thương mại.</p>
         </div>
     </footer>
-<script>
-function toggleMenu() {
-  var nav = document.querySelector(".nav-links");
-  var btn = document.querySelector(".menu-toggle");
-  nav.classList.toggle("open");
-  btn.classList.toggle("active");
-}
-document.querySelectorAll(".nav-links a").forEach(function(link) {
-  link.addEventListener("click", function() {
-    document.querySelector(".nav-links").classList.remove("open");
-    document.querySelector(".menu-toggle").classList.remove("active");
-  });
-});
-</script>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector(".nav-links");
+            var btn = document.querySelector(".menu-toggle");
+            nav.classList.toggle("open");
+            btn.classList.toggle("active");
+        }
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                document.querySelector(".nav-links").classList.remove("open");
+                document.querySelector(".menu-toggle").classList.remove("active");
+            });
+        });
+    </script>
 </body>
+
 </html>

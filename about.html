@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Về Dự Án | Cẩm Nang Việt Nam</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">Du Lịch <span>Việt</span></a>
+                <a href="index.html">Du Lịch <span>Việt Nam</span></a>
             </div>
             <button class="menu-toggle" aria-label="Mở menu" onclick="toggleMenu()">
                 <span></span><span></span><span></span>
@@ -18,9 +20,9 @@
             <ul class="nav-links">
                 <li><a href="index.html">Trang Chủ</a></li>
                 <li><a href="destinations.html">Địa Điểm</a></li>
-                <li><a href="gallery.html">Thư Viện Ảnh</a></li>
+                <li><a href="gallery.html">Góc Ảnh Đẹp</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="tips.html">Mẹo Du Lịch</a></li>
+                <li><a href="tips.html">Chuẩn Bị Du Lịch</a></li>
                 <li><a href="about.html" class="active">Về Dự Án</a></li>
                 <li><a href="contact.html">Liên Hệ</a></li>
             </ul>
@@ -38,15 +40,20 @@
             </div>
 
             <p class="about-text">
-                <strong>Cẩm Nang Du Lịch Việt Nam</strong> là một trang web thông tin phi thương mại, được xây dựng với mục tiêu chia sẻ hình ảnh, vẻ đẹp thiên nhiên, con người và giá trị văn hóa của đất nước tới cộng đồng yêu du lịch.
+                <strong>Cẩm Nang Du Lịch Việt Nam</strong> là một trang web thông tin phi thương mại, được xây dựng với
+                mục tiêu chia sẻ hình ảnh, vẻ đẹp thiên nhiên, con người và giá trị văn hóa của đất nước tới cộng đồng
+                yêu du lịch.
             </p>
 
             <p class="about-text">
-                Website tập trung cung cấp các thông tin cơ bản về vị trí, đặc điểm tự nhiên, thời điểm lý tưởng trong năm để tham quan và các giá trị đặc sắc của từng địa danh. Nội dung mang tính tham khảo, không nhằm mục đích kinh doanh tour hay dịch vụ.
+                Website tập trung cung cấp các thông tin cơ bản về vị trí, đặc điểm tự nhiên, thời điểm lý tưởng trong
+                năm để tham quan và các giá trị đặc sắc của từng địa danh. Nội dung mang tính tham khảo, không nhằm mục
+                đích kinh doanh tour hay dịch vụ.
             </p>
 
             <p class="about-text">
-                Dự án được thực hiện trong khuôn khổ bài tập môn Lập trình Web, sử dụng HTML5 và CSS3 thuần, tập trung vào giao diện responsive và cấu trúc semantic.
+                Dự án được thực hiện trong khuôn khổ bài tập môn Lập trình Web, sử dụng HTML5 và CSS3 thuần, tập trung
+                vào giao diện responsive và cấu trúc semantic.
             </p>
 
             <div class="about-box">
@@ -85,19 +92,20 @@
             <p>&copy; 2026 Cẩm Nang Du Lịch Việt Nam. Trang thông tin phi thương mại.</p>
         </div>
     </footer>
-<script>
-function toggleMenu() {
-  var nav = document.querySelector(".nav-links");
-  var btn = document.querySelector(".menu-toggle");
-  nav.classList.toggle("open");
-  btn.classList.toggle("active");
-}
-document.querySelectorAll(".nav-links a").forEach(function(link) {
-  link.addEventListener("click", function() {
-    document.querySelector(".nav-links").classList.remove("open");
-    document.querySelector(".menu-toggle").classList.remove("active");
-  });
-});
-</script>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector(".nav-links");
+            var btn = document.querySelector(".menu-toggle");
+            nav.classList.toggle("open");
+            btn.classList.toggle("active");
+        }
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                document.querySelector(".nav-links").classList.remove("open");
+                document.querySelector(".menu-toggle").classList.remove("active");
+            });
+        });
+    </script>
 </body>
+
 </html>

@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">Du Lịch <span>Việt</span></a>
+                <a href="index.html">Du Lịch <span>Việt Nam</span></a>
             </div>
             <button class="menu-toggle" aria-label="Mở menu" onclick="toggleMenu()">
                 <span></span><span></span><span></span>
@@ -20,9 +20,9 @@
             <ul class="nav-links">
                 <li><a href="index.html">Trang Chủ</a></li>
                 <li><a href="destinations.html" class="active">Địa Điểm</a></li>
-                <li><a href="gallery.html">Thư Viện Ảnh</a></li>
+                <li><a href="gallery.html">Góc Ảnh Đẹp</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="tips.html">Mẹo Du Lịch</a></li>
+                <li><a href="tips.html">Chuẩn Bị Du Lịch</a></li>
                 <li><a href="about.html">Về Dự Án</a></li>
                 <li><a href="contact.html">Liên Hệ</a></li>
             </ul>
@@ -39,8 +39,16 @@
             <p>Tổng hợp thông tin các danh lam thắng cảnh tiêu biểu trên cả nước</p>
         </div>
 
+        <!-- Thanh lọc theo vùng miền -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Tất Cả</button>
+            <button class="filter-btn" data-filter="bac">Miền Bắc</button>
+            <button class="filter-btn" data-filter="trung">Miền Trung</button>
+            <button class="filter-btn" data-filter="nam">Miền Nam</button>
+        </div>
+
         <div class="grid-container">
-            <article class="card">
+            <article class="card" data-region="bac">
                 <img src="images/vinhhalong_1.jpg" alt="Vịnh Hạ Long">
                 <div class="card-body">
                     <span class="badge">Di sản UNESCO</span>
@@ -54,7 +62,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="trung">
                 <img src="images/phocohoian_1.jpg" alt="Phố Cổ Hội An">
                 <div class="card-body">
                     <span class="badge">Văn Hóa</span>
@@ -68,7 +76,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="nam">
                 <img src="images/phuquoc_1.jpg" alt="Đảo Ngọc Phú Quốc">
                 <div class="card-body">
                     <span class="badge">Du Lịch Biển</span>
@@ -82,7 +90,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="bac">
                 <img src="images/sapa_1.jpg" alt="Sa Pa">
                 <div class="card-body">
                     <span class="badge">Du Lịch Núi</span>
@@ -96,7 +104,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="bac">
                 <img src="images/song-nho-que_1.jpg" alt="Sông Nho Quế">
                 <div class="card-body">
                     <span class="badge">Vùng Cao</span>
@@ -110,7 +118,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="trung">
                 <img src="images/ban-dao-son-tra_1.jpg" alt="Bán Đảo Sơn Trà">
                 <div class="card-body">
                     <span class="badge">Thiên Nhiên - Sinh Thái</span>
@@ -124,7 +132,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="bac">
                 <img src="images/trangan_1.jpg" alt="Tràng An - Ninh Bình">
                 <div class="card-body">
                     <span class="badge">Di sản UNESCO</span>
@@ -138,7 +146,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="trung">
                 <img src="images/phongnha_1.jpg" alt="Phong Nha Kẻ Bàng">
                 <div class="card-body">
                     <span class="badge">Khám Phá - Hang Động</span>
@@ -152,7 +160,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="trung">
                 <img src="images/hue_1.jpg" alt="Cố đô Huế">
                 <div class="card-body">
                     <span class="badge">Văn Hóa - Lịch Sử</span>
@@ -166,7 +174,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="trung">
                 <img src="images/dalat_1.png" alt="Đà Lạt">
                 <div class="card-body">
                     <span class="badge">Thiên Nhiên - Nghỉ Dưỡng</span>
@@ -180,7 +188,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="trung">
                 <img src="images/nhatrang_1.jpg" alt="Vịnh Nha Trang">
                 <div class="card-body">
                     <span class="badge">Biển Đảo</span>
@@ -194,7 +202,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="nam">
                 <img src="images/chonoicairang_1.jpg" alt="Chợ Nổi Cái Răng">
                 <div class="card-body">
                     <span class="badge">Văn Hóa - Sông Nước</span>
@@ -208,7 +216,7 @@
                 </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="bac">
                 <img src="images/tamcocbichdong_1.jpg" alt="Tam Cốc - Bích Động">
                 <div class="card-body">
                     <span class="badge">Thiên Nhiên - Di Sản</span>
@@ -219,9 +227,10 @@
                         <span>📍 Ninh Bình</span>
                         <span>🗓️ T5 - T4</span>
                     </div>
+                </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-region="trung">
                 <img src="images/dongthienduong_1.jpg" alt="Động Thiên Đường">
                 <div class="card-body">
                     <span class="badge">Khám Phá - Hang Động</span>
@@ -232,23 +241,40 @@
                         <span>📍 Quảng Bình</span>
                         <span>🗓️ T4 - T8</span>
                     </div>
+                </div>
             </article>
 
-            <article class="card">
-                <img src="images/condao_1.jpg" alt="Côn Đảo">
+
+            <article class="card" data-region="nam">
+                <img src="images/nuibaden_1.jpg" alt="Núi Bà Đen">
                 <div class="card-body">
-                    <span class="badge">Biển Đảo - Lịch Sử</span>
-                    <h3 class="card-title">Côn Đảo</h3>
-                    <p class="card-text">Quần đảo vừa mang vẻ đẹp thiên nhiên hoang sơ, biển xanh ngắt, rặng san hô
-                        phong phú, vừa là di tích lịch sử linh thiêng gắn liền với tinh thần kiên trung của dân tộc.</p>
+                    <span class="badge">Văn Hóa - Tâm Linh</span>
+                    <h3 class="card-title">Núi Bà Đen</h3>
+                    <p class="card-text">Miền đất hứa của những tín đồ săn mây, nơi bạn được hòa mình vào thiên nhiên
+                        hùng vĩ và tìm về sự an yên giữa không gian Phật giáo đỉnh núi.</p>
                     <div class="card-info">
-                        <span>📍 Bà Rịa - Vũng Tàu</span>
-                        <span>🗓️ T3 - T8</span>
+                        <span>📍 Tây Ninh</span>
+                        <span>🗓️ T11 - T5</span>
                     </div>
-
-
-
                 </div>
+            </article>
+
+            <article class="card" data-region="nam">
+                <img src="images/vuonquocgiacattien_1.jpg" alt="Vườn Quốc Gia Cát Tiên">
+                <div class="card-body">
+                    <span class="badge">Sinh Thái - Khám Phá</span>
+                    <h3 class="card-title">Vườn Quốc Gia Cát Tiên</h3>
+                    <p class="card-text">Nơi thanh lọc tâm hồn giữa không gian xanh bất tận, đánh thức mọi giác quan
+                        bằng tiếng chim rừng và vẻ đẹp nguyên sơ của vùng đất ngập nước.</p>
+                    <div class="card-info">
+                        <span>📍 Đồng Nai</span>
+                        <span>🗓️ T11 - T5</span>
+                    </div>
+                </div>
+            </article>
+
+
+        </div>
     </main>
 
     <footer>
@@ -286,6 +312,28 @@
             link.addEventListener("click", function () {
                 document.querySelector(".nav-links").classList.remove("open");
                 document.querySelector(".menu-toggle").classList.remove("active");
+            });
+        });
+
+
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.grid-container .card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                cards.forEach(card => {
+                    const region = card.getAttribute('data-region');
+                    if (filter === 'all' || region === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
             });
         });
     </script>

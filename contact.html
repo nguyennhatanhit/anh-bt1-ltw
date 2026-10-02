@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liên Hệ | Cẩm Nang Việt Nam</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">Du Lịch <span>Việt</span></a>
+                <a href="index.html">Du Lịch <span>Việt Nam</span></a>
             </div>
             <button class="menu-toggle" aria-label="Mở menu" onclick="toggleMenu()">
                 <span></span><span></span><span></span>
@@ -18,9 +20,9 @@
             <ul class="nav-links">
                 <li><a href="index.html">Trang Chủ</a></li>
                 <li><a href="destinations.html">Địa Điểm</a></li>
-                <li><a href="gallery.html">Thư Viện Ảnh</a></li>
+                <li><a href="gallery.html">Góc Ảnh Đẹp</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="tips.html">Mẹo Du Lịch</a></li>
+                <li><a href="tips.html">Chuẩn Bị Du Lịch</a></li>
                 <li><a href="about.html">Về Dự Án</a></li>
                 <li><a href="contact.html" class="active">Liên Hệ</a></li>
             </ul>
@@ -35,10 +37,12 @@
         <div class="contact-wrapper">
             <div class="contact-info">
                 <h3>Cùng Chung Tay Quảng Bá</h3>
-                <p>Nếu bạn biết một địa danh đẹp hoặc muốn cập nhật thêm thông tin hữu ích cho du khách, hãy chia sẻ cùng chúng tôi.</p>
+                <p>Nếu bạn biết một địa danh đẹp hoặc muốn cập nhật thêm thông tin hữu ích cho du khách, hãy chia sẻ
+                    cùng chúng tôi.</p>
                 <p style="margin-top:1.2rem;"><strong>Email:</strong> nguyennhatanh.support@gmail.com</p>
                 <p><strong>SĐT:</strong> 0865 050 754</p>
-                <p style="margin-top:1rem; font-size:0.9rem; color:#6b7280;">Form bên cạnh chỉ mang tính minh họa (không gửi dữ liệu thật).</p>
+                <p style="margin-top:1rem; font-size:0.9rem; color:#6b7280;">Form bên cạnh chỉ mang tính minh họa (không
+                    gửi dữ liệu thật).</p>
             </div>
 
             <div>
@@ -55,11 +59,13 @@
                     </div>
                     <div class="form-group">
                         <label for="location">Tên địa điểm / Danh thắng muốn giới thiệu</label>
-                        <input type="text" id="location" name="location" placeholder="Ví dụ: Đỉnh Mẫu Sơn - Lạng Sơn" required>
+                        <input type="text" id="location" name="location" placeholder="Ví dụ: Đỉnh Mẫu Sơn - Lạng Sơn"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="content">Mô tả hoặc chia sẻ kinh nghiệm</label>
-                        <textarea id="content" name="content" rows="5" placeholder="Chia sẻ nét đẹp, thời điểm đi đẹp nhất..." required></textarea>
+                        <textarea id="content" name="content" rows="5"
+                            placeholder="Chia sẻ nét đẹp, thời điểm đi đẹp nhất..." required></textarea>
                     </div>
                     <button type="submit" class="btn">Gửi Đóng Góp</button>
                 </form>
@@ -91,19 +97,20 @@
             <p>&copy; 2026 Cẩm Nang Du Lịch Việt Nam. Trang thông tin phi thương mại.</p>
         </div>
     </footer>
-<script>
-function toggleMenu() {
-  var nav = document.querySelector(".nav-links");
-  var btn = document.querySelector(".menu-toggle");
-  nav.classList.toggle("open");
-  btn.classList.toggle("active");
-}
-document.querySelectorAll(".nav-links a").forEach(function(link) {
-  link.addEventListener("click", function() {
-    document.querySelector(".nav-links").classList.remove("open");
-    document.querySelector(".menu-toggle").classList.remove("active");
-  });
-});
-</script>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector(".nav-links");
+            var btn = document.querySelector(".menu-toggle");
+            nav.classList.toggle("open");
+            btn.classList.toggle("active");
+        }
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                document.querySelector(".nav-links").classList.remove("open");
+                document.querySelector(".menu-toggle").classList.remove("active");
+            });
+        });
+    </script>
 </body>
+
 </html>

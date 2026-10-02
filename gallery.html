@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thư Viện Ảnh | Cẩm Nang Việt Nam</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -18,9 +20,9 @@
             <ul class="nav-links">
                 <li><a href="index.html">Trang Chủ</a></li>
                 <li><a href="destinations.html">Địa Điểm</a></li>
-                <li><a href="gallery.html" class="active">Thư Viện Ảnh</a></li>
+                <li><a href="gallery.html" class="active">Góc Ảnh Đẹp</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="tips.html">Mẹo Du Lịch</a></li>
+                <li><a href="tips.html">Chuẩn Bị Du Lịch</a></li>
                 <li><a href="about.html">Về Dự Án</a></li>
                 <li><a href="contact.html">Liên Hệ</a></li>
             </ul>
@@ -28,12 +30,12 @@
     </header>
 
     <section class="page-banner">
-        <h1>Thư Viện Ảnh Địa Danh</h1>
+        <h1>Góc Ảnh Đẹp Du Lịch</h1>
     </section>
 
     <main class="container">
         <div class="section-title">
-            <h2>Hình Ảnh Minh Họa</h2>
+            <h2> Hình Ảnh </h2>
             <p>Một số khoảnh khắc đẹp từ các điểm đến trên khắp Việt Nam</p>
         </div>
 
@@ -117,19 +119,20 @@
             <p>&copy; 2026 Cẩm Nang Du Lịch Việt Nam. Trang thông tin phi thương mại.</p>
         </div>
     </footer>
-<script>
-function toggleMenu() {
-  var nav = document.querySelector(".nav-links");
-  var btn = document.querySelector(".menu-toggle");
-  nav.classList.toggle("open");
-  btn.classList.toggle("active");
-}
-document.querySelectorAll(".nav-links a").forEach(function(link) {
-  link.addEventListener("click", function() {
-    document.querySelector(".nav-links").classList.remove("open");
-    document.querySelector(".menu-toggle").classList.remove("active");
-  });
-});
-</script>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector(".nav-links");
+            var btn = document.querySelector(".menu-toggle");
+            nav.classList.toggle("open");
+            btn.classList.toggle("active");
+        }
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                document.querySelector(".nav-links").classList.remove("open");
+                document.querySelector(".menu-toggle").classList.remove("active");
+            });
+        });
+    </script>
 </body>
+
 </html>

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mẹo Du Lịch | Cẩm Nang Việt Nam</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">Du Lịch <span>Việt</span></a>
+                <a href="index.html">Du Lịch <span>Việt Nam</span></a>
             </div>
             <button class="menu-toggle" aria-label="Mở menu" onclick="toggleMenu()">
                 <span></span><span></span><span></span>
@@ -18,9 +20,9 @@
             <ul class="nav-links">
                 <li><a href="index.html">Trang Chủ</a></li>
                 <li><a href="destinations.html">Địa Điểm</a></li>
-                <li><a href="gallery.html">Thư Viện Ảnh</a></li>
+                <li><a href="gallery.html">Góc Ảnh Đẹp</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="tips.html" class="active">Mẹo Du Lịch</a></li>
+                <li><a href="tips.html" class="active">Chuẩn Bị Du Lịch</a></li>
                 <li><a href="about.html">Về Dự Án</a></li>
                 <li><a href="contact.html">Liên Hệ</a></li>
             </ul>
@@ -41,27 +43,32 @@
             <div class="tip-card">
                 <div class="tip-icon">📅</div>
                 <h3>Chọn thời điểm phù hợp</h3>
-                <p>Miền Bắc đẹp nhất tháng 9–11 và 3–4. Miền Trung tránh mùa mưa bão (9–11). Miền Nam dễ đi quanh năm nhưng mùa khô (11–4) dễ chịu hơn.</p>
+                <p>Miền Bắc đẹp nhất tháng 9–11 và 3–4. Miền Trung tránh mùa mưa bão (9–11). Miền Nam dễ đi quanh năm
+                    nhưng mùa khô (11–4) dễ chịu hơn.</p>
             </div>
             <div class="tip-card">
                 <div class="tip-icon">🎒</div>
                 <h3>Đồ dùng cần mang</h3>
-                <p>Giày đi bộ thoải mái, áo mưa mỏng, kem chống nắng, thuốc cơ bản. Nếu đi vùng núi, mang thêm áo ấm và gậy leo núi nếu cần.</p>
+                <p>Giày đi bộ thoải mái, áo mưa mỏng, kem chống nắng, thuốc cơ bản. Nếu đi vùng núi, mang thêm áo ấm và
+                    gậy leo núi nếu cần.</p>
             </div>
             <div class="tip-card">
                 <div class="tip-icon">🚌</div>
                 <h3>Di chuyển nội địa</h3>
-                <p>Xe khách giường nằm, tàu hỏa và máy bay nội địa đều phổ biến. Nên đặt vé trước vào mùa cao điểm. Ứng dụng đặt xe công nghệ rất tiện trong thành phố.</p>
+                <p>Xe khách giường nằm, tàu hỏa và máy bay nội địa đều phổ biến. Nên đặt vé trước vào mùa cao điểm. Ứng
+                    dụng đặt xe công nghệ rất tiện trong thành phố.</p>
             </div>
             <div class="tip-card">
                 <div class="tip-icon">💰</div>
                 <h3>Ngân sách tham khảo</h3>
-                <p>Du lịch tiết kiệm khoảng 500–800k/ngày (ăn + ngủ + di chuyển ngắn). Nếu muốn thoải mái hơn có thể dành 1–1.5 triệu/ngày tùy điểm đến.</p>
+                <p>Du lịch tiết kiệm khoảng 500–800k/ngày (ăn + ngủ + di chuyển ngắn). Nếu muốn thoải mái hơn có thể
+                    dành 1–1.5 triệu/ngày tùy điểm đến.</p>
             </div>
             <div class="tip-card">
                 <div class="tip-icon">🌿</div>
                 <h3>Du lịch có trách nhiệm</h3>
-                <p>Không xả rác, không đụng chạm vào san hô, tôn trọng văn hóa địa phương. Mua sắm sản phẩm địa phương thay vì hàng nhái.</p>
+                <p>Không xả rác, không đụng chạm vào san hô, tôn trọng văn hóa địa phương. Mua sắm sản phẩm địa phương
+                    thay vì hàng nhái.</p>
             </div>
             <div class="tip-card">
                 <div class="tip-icon">📱</div>
@@ -107,19 +114,20 @@
             <p>&copy; 2026 Cẩm Nang Du Lịch Việt Nam. Trang thông tin phi thương mại.</p>
         </div>
     </footer>
-<script>
-function toggleMenu() {
-  var nav = document.querySelector(".nav-links");
-  var btn = document.querySelector(".menu-toggle");
-  nav.classList.toggle("open");
-  btn.classList.toggle("active");
-}
-document.querySelectorAll(".nav-links a").forEach(function(link) {
-  link.addEventListener("click", function() {
-    document.querySelector(".nav-links").classList.remove("open");
-    document.querySelector(".menu-toggle").classList.remove("active");
-  });
-});
-</script>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector(".nav-links");
+            var btn = document.querySelector(".menu-toggle");
+            nav.classList.toggle("open");
+            btn.classList.toggle("active");
+        }
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                document.querySelector(".nav-links").classList.remove("open");
+                document.querySelector(".menu-toggle").classList.remove("active");
+            });
+        });
+    </script>
 </body>
+
 </html>
